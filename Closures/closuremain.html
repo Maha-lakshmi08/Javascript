@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> Javascript Tutorial </title>
+        <p id="demo"> </p>
+    </head>
+    <body>
+        <script>
+           var a=10
+           function First_func(){
+            var b=20;
+            function second_func(){
+                var c = a+b
+                return c
+            }
+            return second_func();
+           }
+           var sum = First_func()
+           document.write("The Sum is" + sum + '<br>')
+        </script>
+    </body>
+</html>

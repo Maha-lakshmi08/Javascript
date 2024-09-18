@@ -1,0 +1,100 @@
+<html>
+    <head> <title> Javascript Function </title>
+    <p id="demo" > </p> </head>
+    <body>
+        <!-- <script>
+            function My_function(val){
+                document.getElementById("demo").innerHTML = val * val
+                
+            }
+            My_function(5)
+        </script> -->
+        <!-- //Function Expression  -->
+        <!-- <script>
+            let x = function(){
+                alert("Hello!")
+            }
+            let y=x
+            document.getElementById("demo").innerHTML = y()
+
+        </script> -->
+
+
+        <!-- /* Function Constructor */ -->
+
+        <!-- <script>
+             var My_Function = new Function ("a", "b" , "return a+b");
+             var x = My_Function(2,3)
+             document.getElementById("demo").innerHTML = "The Sum is" + x
+
+
+        </script> -->
+
+          <!-- /* Self Invoking Functions */ -->
+<!-- 
+          <script>
+             (function (){
+                alert("Hello ! Welcome")
+             }) ()
+
+       </script> -->
+
+       <!-- /* Functions as Values*/ -->
+
+       <!-- <script>
+           function Product(a,b){
+            return a*b
+           }
+           let y = Product (2,4)*5*2
+           document.getElementById("demo").innerHTML = "The Product is " + y
+
+         </script> -->
+
+         <!-- /* Functions as Objects*/ -->
+<!-- 
+       <script>
+         var body = "return Math.PI * rad * rad"
+         var circle = new Function("rad", body);
+         alert(circle(5))
+      </script> -->
+
+
+       <!-- /* Arrow Functions*/ -->
+
+       <!-- <script>
+           const Myfunc = (a,b,c) => {return a*b*c}
+           let product = Myfunc(2,3,4)
+           document.getElementById("demo").innerHTML = "The Product of the three digit is " + product
+
+       </script> -->
+
+
+       <!-- /* Generator Functions*/ -->
+
+       <script>
+        function * generateFunc(){
+            yield 1;
+            yield 2;
+            return 3;
+        }
+        let generator = generateFunc();
+        let one = generator.next();
+        let two = generator.next();
+        let threee = generator.next();
+        alert(JSON.stringify (one));
+        alert(JSON.stringify (two));
+        alert(JSON.stringify (three));
+
+    </script>
+
+
+    <script>
+       let x=5;
+       let y=6;
+       let z=7;
+       console.log(eval("x+y"));
+       console.log(eval(z));
+
+    </script>
+    </body>
+</html>

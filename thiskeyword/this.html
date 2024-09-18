@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h1> Keyword</h1>
+    </head>
+    <body>
+        <!-- <script>
+           const random ={
+            name: "John",
+            info() {
+                console.log("Hi! My name is" + this.name)
+            }
+           }
+           random.info()
+        </script> -->
+
+        <script>
+            const random = {
+                name: "Tutorial",
+                video:["JavaScript", "this", "keyword"],
+                info() {
+                    this.video.forEach(function(tag){
+                        console.log(this.name, tag)
+                    }, this)
+                   
+                }
+                
+            }
+            random.info()
+        </script>
+
+    </body>
+</html>
